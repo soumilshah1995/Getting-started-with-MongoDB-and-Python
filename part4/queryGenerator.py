@@ -1,15 +1,8 @@
 try:
     import os
-    import pandas as pd
     import sys
     import io
     import json
-
-    import pymongo
-    from pymongo import MongoClient
-    from bson.objectid import ObjectId
-    from bson.son import SON
-
     print("All Modules loaded ")
 except Exception as e:
     print("Error : {} ".format(e))
@@ -99,6 +92,7 @@ def main():
     rule1 = _helper.add_aggregation_range(feildName='cast',columnName='Cast', limit=5)
     query = _helper.completeAggreation
     print(json.dumps(query , indent=3))
+
 
 if __name__ == "__main__":
     main()
