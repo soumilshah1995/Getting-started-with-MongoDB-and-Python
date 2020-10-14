@@ -1,4 +1,4 @@
-# mongodb://root:rootpassword@localhost:27017
+# on
 version: '3.7'
 services:
   mongodb_container:
